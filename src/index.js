@@ -4,7 +4,7 @@ const fileContent = "Newton School";
 const writeFile = async (fileName, fileContent) => {
     //Write your code here
     //Don't change function name
-     fs.appendFile(fileName, fileContent);
+    await fs.appendFile(fileName, fileContent);
 };
 
 writeFile(fileName, fileContent);
